@@ -45,7 +45,7 @@ namespace SelectionSort
                         smallestIndex = minIndex;
                     }
                 }
-                Swap(myArray, index, smallestIndex);
+                Swap(index, smallestIndex);
             }
             Console.WriteLine("********** Sorted Array*****************");
             DisplayArrayElements();
@@ -60,7 +60,7 @@ namespace SelectionSort
             }
         }
 
-        private void Swap(int[] myArray, int first, int second)
+        private void Swap(int first, int second)
         {
             int temporary = myArray[first];
             myArray[first] = myArray[second];
